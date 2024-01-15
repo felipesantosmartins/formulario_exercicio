@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap');
+
+:root{
+    --roxo-principal:#6C63FF;
+    --preto-bg:#1f1e1e;
+    --branco: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--preto-bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+
+    background-color: var(--branco);
+    border-radius: 10px;
+}
+
+.imagem {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;   
+    
+
+}
+
+
+.ilustracao{
+    width: 85%;
+}
+
+.cadastro{
+    box-shadow: 5px 0px 25px var(--preto-bg);
+    width: 50%;
+    height: 100%;
+}
+
+.cadastro__cabecalho{
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 50px;
+    flex-direction: column;
+    margin: 25px 0 0 50px;
+
+}
+
+.cadastro__cabecalho::after{
+    content: '';
+    background-color: var(--roxo-principal);
+    margin: 0 0 50px 0px;
+
+    
+    width: 5rem;
+    height: 0.25rem;
+    display: flex;
+    align-self: start;
+}
+
+.cadastro__input{
+
+    margin: 0 0 0 50px;
+
+    display: flex;
+    align-items: star;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+    font-size: 1rem;
+
+}
+
+.input__box input{
+    
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 0.5px var(--preto-bg);
+
+}
+
+.cadastro__botao button{
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3%;
+    width: 50%;
+    margin: 25px 0 0 50px;
+
+    border-radius: 10px;
+    color: var(--branco);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--roxo-principal);
+    
+}
+
+.cadastro__botao a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.cadastro__botao :hover{
+    background-color: var(--preto-bg);
+}
